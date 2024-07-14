@@ -21,7 +21,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://job-seeking-mern-deployment.onrender.com/api/v1/user/register",
+        "http://localhost:4000/api/v1/user/register",
         {name, email, password, phone, role}, 
        {
         headers:{
